@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= yield :head %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+
+  <body>
+<link rel="stylesheet" type="stylesheet/css" href="stylesheet/dueno.scss">
+  	<nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="nav-titulo" class="navbar-brand" href=<%= root_path %>>FreeParking</a>
+            </div>
+            <ul class="nav navbar-nav">
+  	            <%= render partial: "layouts/menu" %>
+  	        </ul>
+  	        <ul class="nav navbar-nav navbar-right">
+     			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    		</ul>
+  		</div>
+    </nav>
+  <div class="container"> 
+    <div class="row"> 
+  <div class="col-md-3"><%= render partial: "layouts/menu_dueno" %></div> 
+  <%= yield %>   
+   </div>
+    </body>
+</html>
+

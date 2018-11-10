@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+  	<nav class="navbar navbar-inverse" role="navigation">
+       <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="nav-titulo" class="navbar-brand" href=<%= root_path %>>FreeParking</a>
+            </div>
+            <ul class="nav navbar-nav">
+  	            <%= render partial: "layouts/menu" %>
+  	        </ul>
+  	        <ul class="nav navbar-nav navbar-right">
+     			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    		</ul>
+  		</div>
+	</nav>
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+        </div>
+      </div>
+       <%= yield :intro %>
+          <h1>
+            <%= yield :header_title %> 
+          </h1>  
+          <h2>
+            <%= yield :header_sub_title %>
+          </h2>
+         
+     <%= yield %>   
+
+   </div>
+
+
+  </body>
+</html>
+
+

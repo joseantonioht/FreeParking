@@ -1,0 +1,103 @@
+<div class="col-md-9">
+<h3 align="center">EDITAR PERFIL CLIENTE</h3><P>
+<form class="form-horizontal">
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="name">Nombres: </label>
+	<div class="col-sm-4">
+	<input type="text" class="form-control"  id="name", placeholder="Nombres"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="apellidoP">Apellido Paterno: </label>
+	<div class="col-sm-6">
+	<input type="text" class="form-control" id="apellidoP" placeholder="Apellido Paterno"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="apellidoM">Apellido Materno: </label>
+	<div class="col-sm-6">
+	<input type="text" class="form-control" id="apellidoM" placeholder="Apellido Materno"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="sexo">Sexo: </label>
+	<div class="col-sm-4">
+	<select class="form-control" id="seleccione">
+		<option>Masculino</option>	
+		<option>Femenino</option>
+	</select>
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="tipod">Tipo de documento: </label>
+	<div class="col-sm-4">
+	<select class="form-control" id="seleccione">
+		<option>DNI</option>	
+		<option>Pasaporte</option>
+	</select>
+
+	</div>
+	<div class="col-sm-4">
+	<input type="text" class="form-control" id="Tdocumento" placeholder="Ingrese Documento">
+	</div>
+	</div>
+
+	
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="correo">Correo: </label>
+	<div class="col-sm-6">
+	<input type="text" class="form-control" id="correo"  placeholder="email"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="pass">Contraseña: </label>
+	<div class="col-sm-4">
+	<input type="password" class="form-control" id="pass" placeholder="contraseña"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="pass2">Vuelva ingresar contraseña: </label>
+	<div class="col-sm-4">
+	<input type="password" class="form-control" id="pass2" placeholder="contraseña"> 
+	</div>
+	</div>
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="fechan">Fecha de Nacimiento: </label>
+	<div class="col-sm-4">
+	
+		<input type="text" class="form-control" id="datt">
+		
+	</div>
+		<script type="text/javascript">
+    	$(function(){
+    		$("#datt").datepicker();
+    	
+    	});
+    </script>
+	</div>
+
+
+
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="cell">Celular: </label>
+	<div class="col-sm-4">
+	<input type="text" class="form-control" id="cell"> 
+	</div>
+	</div>
+	
+	<div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" onclick='alert("Se han guardado sus datos correctamente, Ahora puede disfrutar de nuestros servicios")' >Guardar cambios</button>
+      </div>
+    </div>
+    
+</form>
+</div>
